@@ -30,3 +30,27 @@ void listarPCs(struct compu pcs[], int cantidad) {
         printf("------------------------\n");
     }
 }
+
+void mostrarMasVieja(struct compu pcs[], int cantidad) {
+    int min = pcs[0].anio;
+    int indice = 0;
+    for(int i = 1; i < cantidad; i++) {
+        if(pcs[i].anio < min) {
+            min = pcs[i].anio;
+            indice = i;
+        }
+    }
+    listarPCs(&pcs[indice], 1);
+}
+
+void mostrarMasVeloz(struct compu pcs[], int cantidad) {
+    int max = pcs[0].velocidad;
+    int indice = 0;
+    for(int i = 1; i < cantidad; i++) {
+        if(pcs[i].velocidad > max) {
+            max = pcs[i].velocidad;
+            indice = i;
+        }
+    }
+    listarPCs(&pcs[indice], 1);
+}
