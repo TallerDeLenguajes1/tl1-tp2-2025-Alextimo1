@@ -1,1 +1,2 @@
 f)No, porque ese archivo fue creado y commiteado en la rama Opcion_2 y no se ha hecho merge todavía con main.
+Al volver al source control, noto que ahora el main contiene tambien tp2_1_2.c
